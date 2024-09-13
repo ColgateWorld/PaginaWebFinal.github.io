@@ -85,7 +85,7 @@ function Carousel({ selectedPlanet }) {
     setTimeout(async () => {
       try {
         const response = await axios.post(
-          "http://34.193.195.198:8080/predict2", // Asegúrate de que este endpoint esté funcionando
+          "https://5b74-148-241-64-39.ngrok-free.app/predict2", // Asegúrate de que este endpoint esté funcionando
           orderedData
         );
         setPredict(response.data); // Asegúrate de que `response.data.Prediction` sea lo que esperas
